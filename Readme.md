@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Лемешко](https://up.htmlacademy.ru/htmlcss/37/user/2388545).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Именин](https://htmlacademy.ru/profile/aimenin).
 
 ---
 
