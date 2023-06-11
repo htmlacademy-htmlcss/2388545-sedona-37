@@ -54,13 +54,13 @@ body {
 }
 
 .navigation-link {
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-color:#000000;
-text-align: center;
-text-transform: capitalize;
-text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color:#000000;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
 .hero-background {
@@ -73,18 +73,18 @@ text-decoration: none;
 }
 
 .title {
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-align: center;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .description {
-font-size: 22px;
-line-height: 26px;
-text-align: center;
-color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
 
 .advantages-item {
@@ -101,11 +101,11 @@ color: #333333;
 
 .advantages-title,
 .recommendations-title {
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .advantages-item-dark .advantages-title {
@@ -138,11 +138,7 @@ text-transform: uppercase;
   background-position: center;
   background-size: cover;
 }
-/*
-.title, .newsletter-title {
-  color: #ffffff;
-}
-*/
+
 .description,
 .newsletter-description {
   color: #ffffff;
