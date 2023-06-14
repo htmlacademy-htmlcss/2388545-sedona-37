@@ -290,6 +290,8 @@ body {
 .select-control {
   width: 292px;
   font-family: inherit;
+  font-size: 18px;
+  color: #333333;
 }
 
 .select-control option {
