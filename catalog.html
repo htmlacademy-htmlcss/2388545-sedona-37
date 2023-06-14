@@ -109,26 +109,31 @@
               </ul>
             </fieldset>
             <!--сюда вставить фильтрацию цен-->
+            <div class="price">
+              Стоимость
+            </div>
             <button class="button" type="submit">Применить</button>
             <input class="button button-transparent" type="reset" value="Сбросить">
           </form>
         </section>
         <section class="catalog" data-test="catalog">
-          <p class="title catalog-filter-result">Найдено гостиниц: 38</p>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
-          <a class="view view-current" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="view" href="#">
-            <span class="visually-hidden">Показать слайд-шоу</span>
-          </a>
-          <a class="view" href="#">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+          <div class="sorting-container">
+            <p class="title catalog-filter-result">Найдено гостиниц: 38</p>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+            <a class="view view-current" href="#">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="view" href="#">
+              <span class="visually-hidden">Показать слайд-шоу</span>
+            </a>
+            <a class="view" href="#">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </div>
           <ul class="hotel-card-list">
             <li class="hotel-card-item">
               <a class="hotel-card-link" href="#">
