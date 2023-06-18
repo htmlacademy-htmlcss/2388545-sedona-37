@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format(.woff2);
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format(.woff2);
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -28,6 +28,17 @@ body {
   color: #333333;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -41,11 +52,6 @@ body {
 .main-container {
   flex-grow: 1;
   text-align: center;
-}
-
-.container {
-  width: 1060px;
-  margin: 0 auto;
 }
 
 .button {
@@ -78,6 +84,7 @@ body {
 }
 
 .title {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -86,30 +93,33 @@ body {
 }
 
 .description {
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
 }
 
 .navigation {
   display: flex;
+  padding: 0 70px;
 }
 
 .navigation-logo {
+  width: 140px;
   margin-right: 30px;
 }
 
 .navigation-list {
-  width: 470px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-}
-
-.navigation-user {
-  width: 312px;
-  margin-left: auto;
+  width: 470px;
+  list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -118,9 +128,36 @@ body {
   text-decoration: none;
 }
 
+.navigation-list .navigation-link {
+  padding: 20px 16px;
+}
+
+.navigation-user {
+  width: 312px;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+  margin: 0;
+  padding: 22px 12px;
+}
+
+.hero-container {
+  padding: 69px 258px;
+}
+
+.hero-title {
+  margin-bottom: 25px;
+}
+
 .hero-image {
   display: block;
   margin: 0 auto;
+  padding-top: 41px;
+  padding-bottom: 92px;
 }
 
 .hero-background {
@@ -134,10 +171,11 @@ body {
 
 .advantages-list {
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .advantages-item {
@@ -169,16 +207,51 @@ body {
   color: #ffffff
 }
 
+.recommendations-text-title {
+  padding-top: 64px;
+  padding-right: 258px;
+  padding-left: 258px;
+  margin-bottom: 20px;
+}
+
+.recommendations-text-description {
+  padding-right: 258px;
+  padding-left: 258px;
+  padding-bottom: 64px;
+}
+
 .recommendations-list {
   display: flex;
   width: 1200px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .recommendations-item {
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.recommendations-item-transparent {
+  background-color: transparent;
+}
+
+.search {
+  padding: 96px 258px;
+}
+
+.search-title {
+  margin-bottom: 20px;
+}
+
+.search .button {
+  display: inline-block;
+  margin-top: 54px;
+}
+
+.newsletter {
+  padding: 96px 258px 104px;
 }
 
 .newsletter-main {
@@ -190,8 +263,16 @@ body {
   background-size: cover;
 }
 
+.newsletter-title {
+  margin: 20px;
+}
+
 .newsletter-main .newsletter-title {
   color: #ffffff;
+}
+
+.newsletter-form {
+  margin-top: 54px;
 }
 
 .newsletter-form-email {
@@ -206,23 +287,27 @@ body {
   font-size: 20px;
   line-height: 24px;
   color:#000000;
-  text-align: center;
   text-decoration: none;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
+  padding: 40px 70px 30px;
 }
 
 .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 142px;
+  width: 190px;
+  list-style-type: none;
 }
 
-.footer-contacts {
-  width: 720px;
+.footer-social-item {
+  width: 47px;
+  height: 40px;
 }
 
 .footer-contacts-phone {
@@ -245,19 +330,29 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .inner-header-title {
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  text-align: left;
 }
 
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
   color: #ffffff;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
+  margin-right: 28px;
   font-size: 16px;
   color: inherit;
   text-decoration: none;
@@ -269,7 +364,7 @@ body {
 }
 
 .filter-group {
-  width: 151;
+  width: 151px;
 }
 
 .price {
@@ -279,12 +374,22 @@ body {
 .sorting-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.catalog {
+  padding: 0 70px;
+}
+
+.catalog-filter-result {
+  margin-right: auto;
 }
 
 .control-input {
@@ -305,8 +410,29 @@ body {
 }
 
 .view-list {
+  display: flex;
+  justify-content: flex-end;
+  width: 216px;
   margin: 0;
+  margin-left: 14px;
   padding: 0;
+  list-style-type: none;
+}
+
+.view-item {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.view-current {
+  border-color: #000000;
+}
+
+.view-item:last-child {
+  margin-right: 0;
 }
 
 .hotel-card-list {
@@ -345,18 +471,31 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  list-style-type: none;
 }
 
 .pagination-item {
-  width: 60px;
+  margin-right: 8px;
+  text-align: center;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   background-color: #82b3d3;
   color: #ffffff;
+  border-radius: 4px;
   text-decoration: none;
 }
 
@@ -365,9 +504,12 @@ body {
   color: #000000;
 }
 
-.button-pagination-more {
+.pagination-more {
+  padding-top: 17px;
+  padding-bottom: 17px;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
+  font-weight: 400;
   color: #000000;
+  background-color: transparent;
 }
