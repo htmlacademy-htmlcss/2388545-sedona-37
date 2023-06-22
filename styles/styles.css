@@ -108,6 +108,10 @@ body {
   margin-right: 30px;
 }
 
+.page-header-logo {
+  display: block;
+}
+
 .navigation-list {
   display: flex;
   align-items: center;
@@ -361,8 +365,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 35px 70px 70px;
 }
 
 .inner-header-title {
@@ -377,6 +380,7 @@ body {
 .breadcrumbs {
   display: flex;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   color: #ffffff;
   list-style-type: none;
@@ -391,15 +395,30 @@ body {
 
 .filter {
   display: flex;
-  width: 1200px;
+  width: 1060px;
 }
 
 .filter-group {
-  width: 151px;
+  margin-right: 70px;
 }
 
 .price {
-  width: 288px;
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.filter-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.filter-button-container .button {
+  margin-bottom: 32px;
+}
+
+.filter-button-container .button:last-child {
+  margin-bottom: 0;
 }
 
 .sorting-container {
