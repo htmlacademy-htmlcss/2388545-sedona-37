@@ -37,6 +37,7 @@
                   <span class="visually-hidden">
                     Избранное
                   </span>
+                  <span class="favorite-counter">12</span>
                 </a>
               </li>
               <li class="navigation-item">
@@ -69,22 +70,19 @@
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" checked>
-                    <span class="control-mark"></span>
+                    <input class="control-input" type="checkbox" name="swimming-pool" checked>
                     <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
-                    <span class="control-mark"></span>
+                    <input class="control-input" type="checkbox" name="parking" checked>
                     <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi">
-                    <span class="control-mark"></span>
+                    <input class="control-input" type="checkbox" name="Wi-Fi">
                     <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
@@ -95,22 +93,19 @@
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="hotel-type" value="hotel" checked>
-                    <span class="control-mark"></span>
+                    <input class="control-input" type="radio" name="hotel-type" value="hotel" checked>
                     <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="hotel-type" value="motel">
-                    <span class="control-mark"></span>
+                    <input class="control-input" type="radio" name="hotel-type" value="motel">
                     <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="hotel-type" value="apartments">
-                    <span class="control-mark"></span>
+                    <input class="control-input" type="radio" name="hotel-type" value="apartments">
                     <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
@@ -119,16 +114,16 @@
             <fieldset class="filter-group filter-group-price">
               <legend class="filter-title">Стоимость, ₽:</legend>
               <div class="range">
-
-
                 <div class="range-wrapper-inputs">
                   <div class="range-price">
-                    <label class="filter-label" for="min-price">от</label>
+                    <label class="filter-label visually-hidden" for="min-price">Минимальная цена</label>
                     <input class="field" type="number" name="min-price" value="0" id="min-price">
+                    <span class="filter-label-span">от</span>
                   </div>
                   <div class="range-price">
-                    <label class="filter-label" for="min-price">до</label>
+                    <label class="filter-label visually-hidden" for="min-price">Максимальная цена</label>
                     <input class="field" type="number" name="min-price" value="9000" id="min-price">
+                    <span class="filter-label-span">до</span>
                   </div>
                 </div>
                 <div class="range-scale">

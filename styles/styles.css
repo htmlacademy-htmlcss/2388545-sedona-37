@@ -155,7 +155,7 @@ body {
 
 .navigation-logo {
   width: 140px;
-  margin-right: 30px;
+  margin-right: 28px;
   z-index: 1;
 }
 
@@ -251,7 +251,7 @@ body {
 }
 
 .hero-container {
-  padding: 69px 258px;
+  padding: 69px 258px 90px;
 }
 
 .hero-title {
@@ -261,8 +261,8 @@ body {
 .hero-image {
   display: block;
   margin: 0 auto;
-  padding-top: 41px;
-  padding-bottom: 92px;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .hero-background {
@@ -436,7 +436,7 @@ body {
 }
 
 .newsletter-title {
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .newsletter-main .newsletter-title {
@@ -530,6 +530,10 @@ body {
   opacity: 0.3;
 }
 
+.footer-contacts {
+  padding: 5px 0;
+}
+
 .footer-contacts-phone {
   font-style: normal;
   font-weight: 400;
@@ -566,6 +570,256 @@ body {
 
 .htmlacademy-link:active .htmlacademy-logo {
   opacity: 0.3;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 1;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  display: grid;
+  grid-template-columns: 500px 70px;
+  gap: 48px 7px;
+  margin: auto;
+  padding: 54px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.modal-close-button {
+  position: relative;
+  justify-self: end;
+  transform: translateX(19px);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.modal-close-cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus,
+.modal-close-button:active {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:active .modal-close-cross {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 247px 242px;
+  gap: 48px 88px;
+}
+
+.field-group-arrival,
+.field-group-departure {
+  grid-column: 1 / -1;
+}
+
+.field-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-label {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-right: 5px;
+}
+
+.search-form-field {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.search-form-field:hover,
+.search-form-field:focus {
+  background-color: #e6e6e6;
+}
+
+.field-group-arrival .search-form-field,
+.field-group-departure .search-form-field {
+  min-width: 440px;
+}
+
+.field-group-adults .search-form-field,
+.field-group-children .search-form-field {
+  width: 31px;
+  padding: 0;
+  text-align: center;
+}
+
+.search-button-container input::-webkit-outer-spin-button,
+.search-button-container input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.search-button-container {
+  display: flex;
+}
+
+.modal .field-group {
+  position: relative;
+}
+
+.modal-message {
+  position: absolute;
+  left: 157px;
+  bottom: -25px;
+  font-size: 16px;
+}
+
+.modal-message-error {
+  color: #ff5757;
+}
+
+.button-counter {
+  position: relative;
+  width: 40px;
+  height: 48px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.button-counter-del {
+  border-radius: 4px 0 0 4px;
+}
+
+.button-counter-add {
+  border-radius: 0 4px 4px 0;
+}
+
+.modal-icon-del,
+.modal-icon-add {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.button-counter-add:hover .modal-icon-add,
+.button-counter-del:hover .modal-icon-del,
+.button-counter-add:focus .modal-icon-add,
+.button-counter-del:focus .modal-icon-del {
+  fill: #000000;
+}
+
+.button-counter-add:active .modal-icon-add,
+.button-counter-del:active .modal-icon-del {
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+.search-form-field[name="adults"],
+.search-form-field[name="children"] {
+  border-radius: 0;
+}
+
+.tooltip {
+  position: absolute;
+  left: 100%;
+  margin-left: 5px;
+}
+
+.tooltip-toggle {
+  display: block;
+  width: 27px;
+  height: 27px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url(../images/modal/tooltip.svg);
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: center;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-top: 15px;
+  transform: translateX(-50%);
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: #333333;
+  color: #ffffff;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content:"";
+  position: absolute;
+  width: 19px;
+  height: 9px;
+  background-image: url("../images/modal/tooltip-corner.svg");
+  top: -8px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-search {
+  grid-column: 1 / -1;
+  padding: 18px 77px;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #83b3d3;
+}
+
+.button-search:hover,
+.button-search:focus {
+  background-color: #68a2ca;
+}
+
+.button-search:active {
+  color: rgba(255, 255, 255, 0.30);
 }
 
 /* Каталог */
@@ -673,33 +927,31 @@ body {
 }
 
 .control {
-  position: relative;
-  display: block;
-  padding-left: 36px;
+  display: flex;
+  align-items: center;
 }
 
-.control-mark {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
+.control-input[type="checkbox"],
+.control-input[type="radio"] {
+  margin-right: 16px;
   width: 20px;
   height: 20px;
+  appearance: none;
   border-radius: 4px;
   background-color: #ffffff;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark {
+.control-input[type="radio"] {
+  border-radius: 50%;
+}
+
+.control-input[type="checkbox"]:checked {
   background-image: url(../images/catalog/tick-checkbox.svg);
   background-repeat: no-repeat;
   background-size: 20px 20px;
 }
 
-.control-input[type="radio"] + .control-mark {
-  border-radius: 50%;
-}
-
-.control-input[type="radio"]:checked + .control-mark {
+.control-input[type="radio"]:checked {
   background-image: url(../images/catalog/tick-radio.svg);
   background-repeat: no-repeat;
   background-size: 20px 20px;
@@ -752,7 +1004,6 @@ body {
 .range-price {
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
   align-items: center;
   width: 143px;
   background-color: #f2f2f2;
@@ -803,7 +1054,7 @@ body {
   outline: 2px solid #83b3d3;
 }
 
-.filter-label {
+.filter-label-span {
   padding-right: 20px;
   color: #000000;
   opacity: 0.3;
