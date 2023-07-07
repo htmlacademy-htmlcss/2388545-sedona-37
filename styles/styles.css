@@ -159,6 +159,14 @@ body {
   z-index: 1;
 }
 
+.navigation-logo-active:hover {
+  opacity: 0.6;
+}
+
+.navigation-logo-active:active {
+  opacity: 0.3;
+}
+
 .page-header-logo {
   display: block;
 }
@@ -183,6 +191,14 @@ body {
   color:#000000;
   text-align: center;
   text-decoration: none;
+}
+
+.navigation-item:not(.navigation-item-current):hover {
+  opacity: 0.6;
+}
+
+.navigation-item:not(.navigation-item-current):active {
+  opacity: 0.3;
 }
 
 .navigation-list .navigation-link {
@@ -473,6 +489,11 @@ body {
   border-bottom-right-radius: 0;
 }
 
+.newsletter-form-email:hover,
+.newsletter-form-email:focus {
+  background-color: #e6e6e6;
+}
+
 .newsletter-form .button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -643,7 +664,7 @@ body {
   grid-column: 1 / -1;
 }
 
-.field-group {
+.search-form .field-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -656,6 +677,16 @@ body {
   font-size: 20px;
   line-height: 24px;
   margin-right: 5px;
+}
+
+.field-group-arrival .search-label,
+.field-group-departure .search-label {
+  width: calc(100% - 445px);
+}
+
+.field-group-adults .search-label,
+.field-group-children .search-label {
+  width: calc(100% - 116px);
 }
 
 .search-form-field {
@@ -1329,4 +1360,12 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: transparent;
+}
+
+.pagination-more:hover {
+  opacity: 0.6;
+}
+
+.pagination-more:active {
+  opacity: 0.3;
 }
