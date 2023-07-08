@@ -24,14 +24,14 @@
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-search">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">
                   Поиск
                 </span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-favorite">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">
                   Избранное
@@ -39,10 +39,8 @@
                 <span class="favorite-counter">12</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="button button-dark" href="#">Хочу сюда!</a>
-            </li>
           </ul>
+          <a class="button button-dark" href="#">Хочу сюда!</a>
         </nav>
       </header>
       <main class="main-index main-container" data-test="main">
@@ -86,7 +84,7 @@
                   Красивая<br>
                   дорога
                 </h3>
-                <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="advantages-description">Ехать в Седону из Лас&#8209Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages-item advantages-item-light">
@@ -118,26 +116,32 @@
           <p class="description recommendations-text-description">Опытный персонал и качественное обслуживание!</p>
           <ul class="recommendations-list">
             <li class="recommendations-item recommendations-item-house">
-              <h3 class="recommendations-title">Жильё</h3>
-              <p class="recommendations-description">
+              <div class="recommendations-item-container">
+                <h3 class="recommendations-title">Жильё</h3>
+                <p class="recommendations-description">
                 Рекомендуем пожить<br>
                 в настоящем мотеле,<br>
                 всё как в кино!
-              </p>
+                </p>
+              </div>
             </li>
             <li class="recommendations-item recommendations-item-food recommendations-item-transparent">
-              <h3 class="recommendations-title">Еда</h3>
-              <p class="recommendations-description">
-                Всегда заказывайте<br>
-                топовый фирменный бургер, вы не разочаруетесь!
-              </p>
+              <div class="recommendations-item-container">
+                <h3 class="recommendations-title">Еда</h3>
+                <p class="recommendations-description">
+                  Всегда заказывайте<br>
+                  топовый фирменный бургер, вы не разочаруетесь!
+                </p>
+              </div>
             </li>
             <li class="recommendations-item recommendations-item-souvenir">
-              <h3 class="recommendations-title">Сувениры</h3>
-              <p class="recommendations-description">
-                Не только китайского,<br>
-                но и настоящего местного производства!
-              </p>
+              <div class="recommendations-item-container">
+                <h3 class="recommendations-title">Сувениры</h3>
+                <p class="recommendations-description">
+                  Не только китайского,<br>
+                  но и настоящего местного производства!
+                </p>
+              </div>
             </li>
           </ul>
         </section>
@@ -159,7 +163,7 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group newsletter-form">
               <input class="field newsletter-form-email" type="email" name="newsletter-email" placeholder="Ваш e-mail">
-              <input class="button button-big" type="submit" value="Подписаться">
+              <button class="button button-big" type="submit">Подписаться</button>
             </p>
           </form>
         </section>
